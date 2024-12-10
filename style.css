@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Darker text for contrast */
+    text-align: center;
+    padding: 1rem 0; /* Increased padding for a more spacious layout */
+}
+
+header nav {
+    margin-top: 1rem; /* Adds space below the name */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2.75rem; /* 10% larger */
+    font-weight: 400; /* Slimmer font weight */
+    color: #444; /* Lighter black font */
+}
+
+
+nav a {
+    color: #000; /* Black font color */
+    margin: 0 1.5rem; /* Increase spacing between links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Highlight on hover */
+}
+
+/* Sections */
+section {
+    padding: 1rem;
+    text-align: center;
+}
+
+#about {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: auto; /* Makes the section take up full viewport height */
+    text-align: center; /* Centers the text horizontally */
+    padding: 1rem 0 1.5rem 0; /* Adds padding around the section */
+    
+}
+
+#about p {
+    margin: 0 auto; /* Centers the paragraph itself */
+    max-width: 800px; /* Optional: Limits the width of the paragraph */
+}
+
+#work {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    display: inline-block;
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.portfolio-item p {
+    color: #555;
+}
+
+#contact {
+    background-color: #e7e7e7;
+}
+
+/* Portfolio Items*/
+
+#contact {
+    padding: 2rem;
+    text-align: center;
+    font-size: small;
+}
+#contact a:hover {
+    color: #555;
+}
+
+/*dreams.html*/
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Project Gallery */
+.project-gallery {
+    text-align: center;
+    margin: 5px;
+}
+
+.project-gallery img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+/* Style for the project title */
+ header h1 {
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 5px; /* Adds space between title and the paragraph */
+    padding: 0 15px;
+    font-size: 3rem; /* Adjust the font size to your preference */
+    font-weight: 50;
+}
+
+/* Style for the project description (paragraph) */
+.project-gallery p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 30px; /* Adds more space at the bottom of the paragraph */
+    padding: 0 70px; /* Adds some padding on the sides to make the text not touch the edges */
+    font-size: 1rem; /* Adjust the font size to your preference */
+    font-weight: 200;
+}
+
+.back-to-portfolio {
+    display: block;
+    text-align: center;
+    margin-top: 40px; /* Adds space above the button */
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333; /* Change the background color if needed */
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-to-portfolio:hover {
+    background-color: #555; /* Hover effect for the button */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    max-width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lightbox img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.lightbox img:hover {
+    transform: scale(1.05);
+}
